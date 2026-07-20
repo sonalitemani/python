@@ -31,3 +31,27 @@ print(myCar.total_cars)
 print(myCar.mystatic())
 print(myCar.model)
 print(Car.mystatic())
+
+class Battery():
+    def __init__(self,battery):
+        self.battery = battery
+    def getBattery(self):
+        return self.battery
+
+class Engine():
+    def __init__(self,engine):
+        self.engine = engine
+    def getEngine(self):
+        return self.engine
+
+class ElectricCar(Car,Battery,Engine):
+    def __init__(self,brand,model,year,battery,engine):
+        super().__init__(brand,model,year)
+        Battery.__init__(self,battery)
+        Engine.__init__(self,engine)
+
+eng = ElectricCar('2121','bgb','2022','233kwh','turbo');
+print(eng.getBattery())
+print(eng.getEngine())    
+
+    
