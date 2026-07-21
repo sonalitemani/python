@@ -12,4 +12,4 @@ def debug(func):
 def add(a, b , c , greet ='dummy'):
     return a + b + c
 
-add(1, 2,3 , greet='hello')
+add(1, 2,3 ,greet = 'hello')
