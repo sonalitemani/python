@@ -1,0 +1,4 @@
+videos=[{'title':'learn python','time':'30 min'},{'title':'learn javascript','time':'30 min'},{'title':'learn c++','time':'30 min'}]
+
+for index, video in enumerate(videos, start =1):
+    print(index , video['title'],video['time'])
