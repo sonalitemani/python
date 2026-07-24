@@ -38,7 +38,7 @@ class Product(BaseModel):
 class BookingModel(BaseModel):
     user_id: int
     room_id: int
-    nights: int = Field(...,gt=0)
+    nights: int = Field(...,ge=0)
     rate_per_night: float 
 
     @computed_field
